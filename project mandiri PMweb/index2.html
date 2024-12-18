@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderful Indonesia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background: url(waifu.jpg) no-repeat center/cover;
+            color: #f3f8f3;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        header h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        nav {
+            background: #006400;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background: #228B22;
+            border-radius: 5px;
+        }
+
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container h2 {
+            color: #006400;
+            margin-bottom: 20px;
+        }
+
+        .destinasi {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 100px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            padding: 10px 0;
+            color: #228B22;
+        }
+
+        .card p {
+            padding: 0 10px 10px;
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        #Promosi h2 {
+            text-align: center;
+            margin: 20px 0; 
+            font-weight: bold;
+        }
+        table {
+            border-collapse: collapse; 
+            text-align: center;
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        #cabang h2 {
+            text-align: center;
+            margin: 20px 0; 
+            font-weight: bold;
+        }
+
+
+        #cabang .card-container {
+            display: flex;
+            gap: 20px; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            margin-top: 20px;
+        }
+
+        #cabang .card {
+            flex: 1 1 300px;
+            background-color: #2ea83f;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(249, 248, 248, 0.1);
+            font-size: 1rem;
+            line-height: 1.4;
+            border: 1px solid #170f0f;
+            max-width: 300px; 
+        }
+
+        @media (max-width: 768px) {
+        #cabang .card-container {
+            flex-direction: column;
+        }
+
+        #cabang .card {
+            flex: 1 1 auto; 
+        }
+        }
+
+        th {
+            background-color: #1d8020; 
+            color: white; 
+            padding: 10px; 
+            text-align: center; 
+        }
+
+        td {
+            border: 1px solid black; 
+            padding: 10px;
+            text-align: center;
+        }
+
+        .Form {
+            text-align: center;
+        }
+
+        footer {
+            background: #0fac0f;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wonderful Indonesia</h1>
+        <h1>Keindahan Alam yang Memukau di Nusantara</h1>
+    </header>
+
+    <nav>
+        <a href="#pulau">Pulau</a>
+        <a href="#gunung">Gunung</a>
+        <a href="#pantai">Pantai</a>
+        <a href="#Danau">Danau</a>
+        <a href="#Promosi">Promosi</a>
+        <a href="#cabang">Cabang</a>
+        <a href="#footer">Form Pemesanan</a>
+    </nav>
+
+    <div class="container">
+        <h2>Destinasi Populer</h2>
+        <div class="destinasi">
+            <div class="card" id="pulau">
+                <img src="raja ampat.jpg" alt="Pulau Raja AMpat">
+                <h3>Pulau Raja Ampat</h3>
+                <p>Destinasi yang terkenal dengan kuindahan pulaunya, keindahan pantainya, dan alam bawah laut.</p>
+                <img src="gambar2.jpg" alt="Pulau Lombok">
+                <h3>Pulau Lombok</h3>
+                <p>Destinasi yang terkenal dengan kuindahan pulaunya, keindahan pantainya, dan alam bawah lauts, serta pulau komodo dengan hewan ciri khasnya yaitu komodo yang merupakam salah satu spesies kadal terbesar didunia.</p>
+            </div>
+            <div class="card" id="gunung">
+                <img src="bromo.jpg" alt="Gunung Bromo">
+                <h3>Gunung Bromo</h3>
+                <p>Gunung dengan pemandangan matahari terbit dan memukau di Jawa Timur.</p>
+                <img src="rinjani.jpg" alt="Gunung Rinjani">
+                <h3>Gunung Rinjadi</h3>
+                <p>Gunung dengan pemandangan matahari terbit, padang sabana yang luas yang sangat memukau di Nusa Tenggara Barat.</p>
+            </div>
+            <div class="card" id="pantai">
+                <img src="bali.jpg" alt="Pantai Kuta">
+                <h3>Pantai Bali</h3>
+                <p>Pantai populer di Bali yang terkenal dengan ombak untuk berselancar.</p>
+            </div>
+            <div class="card" id="Danau">
+                <img src="Toba.jpg" alt="Danau Toba">
+                <h3>Danau Toba</h3>
+                <p>Danau yang populer di Indonesia yang terkenal dengan cerita legendanya dan juga menjadi salah satu danau terbesar di indonesia.</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="Promosi">
+        <h2>Promosi</h2>
+        <table>
+            <tr>
+                <th>Paket</th>
+                <th>Harga</th>
+                <th>Waktu</th>
+                <th>Syarat dan ketentuan</th>
+                <th>Deskripsi</th>
+            </tr>
+            <tr>
+                <td>Paket 1</td>
+                <td>Rp 5.000.000</td>
+                <td>3 Hari</td>
+                <td>Warga Negara Indonesia dan satu paket maksimal untuk 3 orang</td>
+                <td>Semua destinasi dengan harga yang sama</td>
+            </tr>
+            <tr>
+                <td>Paket 2</td>
+                <td>Rp 3.000.000</td>
+                <td>2 Hari</td>
+                <td>Warga Negara Indonesia dan satu paket maksimal untuk 3 orang</td>
+                <td>Semua destinasi dengan harga yang sama</td>
+             <tr>
+                <td>Paket 3</td>
+                <td>Rp 10.000.000</td>
+                <td>7 Hari</td>
+                <td>Warga Negara Indonesia dan satu paket maksimal untuk 3 orang</td>
+                <td>Semua destinasi dengan harga yang sama</td>
+            </tr>
+            </tr>
+        </table>
+        <br>
+        <section id="cabang">
+            <h2>Perusahaan kami memiliki beberapa cabang di kota besar diantaranya:</h2>
+            <div class="card-container">
+                <div class="card">
+                    <p>Jakarta, Jalan Tanah Abang I No.1, Petojo Selatan, Kecamatan Gambir, Kota Jakarta Pusat DKI Jakarta</p>
+                </div>
+                <div class="card">
+                    <p>Bandung, Jalan Tamansari No.49, Lb. Siliwangi, Coblong, Kota Bandung, Jawa Barat 40132</p>
+                </div>
+                <div class="card">
+                    <p>Surabaya, MA Hasanuddin, Jalan Simolawang Baru I No. 95 Surabaya</p>
+                </div>
+            </div>
+        </section>
+        
+        <br>
+        <br><br><br>
+    </section>
+        <div id="Form Pemesanan Tiket" class="Form">
+            <h3>Buka halaman form dibawah ini untuk memesan tiket anda</h3>
+            <p>Buka halaman <a href="form.html">Form Pemesanan</a></p>
+        </div>
+    <footer id="footer">
+        <p>&copy; 2024 Wonderful Indonesia | Dibuat oleh Muhamad Imanudin</p>
+        <p>Jika anda penasaran atau kepo tentang pengembang anda bisa follow sosial media pengembang dibawah ini</p>
+        <a href="https://www.instagram.com/mhmdiman12/">Instagram</a>
+        <a href="www.youtube.com/@itsworking-y4y">Youtube</a>
+    </footer>
+</body>
+</html>

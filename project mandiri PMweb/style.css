@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+    color:rgb(12, 13, 12);
+    background: url(peta2.jpg);
+
+   
+}
+
+.header-image {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    background: #545151;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 5px;
+}
+
+nav ul li a {
+    color: rgb(246, 253, 247);
+    text-decoration: none;
+}
+
+.slider-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}   
+
+.slide {
+    width: 35%;
+    transition: transform 0.1s ease-in-out;
+}
+
+#cabang {
+    text-align: center;
+    margin: 20px 0; 
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #6f6c6c;
+    color: white;
+}
